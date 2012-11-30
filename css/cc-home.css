@@ -1,0 +1,336 @@
+
+/* Css PadrÃ£o */
+@import url( "cc-reset.css" );
+@import url( "cc-estrutura.css" );
+
+/* font Face */
+@import url( "cc-fontface-gotham-pack.css" );
+
+/* Banner */
+
+div#hold-carousel{
+    height: 416px;
+    overflow: hidden;
+    text-align: center;
+    width: 100%;
+}
+    div#carousel { margin: 0 auto; z-index: 1; }
+    div#carousel img {
+        height: 416px;
+        margin: 0 auto;
+        width: 999px;
+    }
+
+#prev, #next {
+    display: block;
+    height: 77px;
+    position: absolute;
+    top: 360px;
+    width: 73px;
+    z-index: 3;
+}
+
+    #prev {
+        background: url("/arquivos/cc-prev-bullet-banner.png?v=634855689597100000") repeat scroll 0 0 transparent;
+        margin: 0 0 0 -34px;
+    }
+    #next {
+        background: url("/arquivos/cc-netx-bullet-banner.png?v=634855689526370000") repeat scroll 0 0 transparent;
+        margin: 0 0 0 900px;
+    }
+
+.hero { 
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+
+#left-overlay {
+    height: 93%;
+    left: 0;
+    position: absolute;
+    width: 5%;
+    z-index: 3;
+}
+
+#right-overlay {
+    height: 93%;
+    position: absolute;
+    right: 0;
+    width: 5%;
+    z-index: 3;
+}
+
+#left-overlay img,
+#right-overlay img
+{ width: 100%; height: 100%; float: left; }
+
+/* Conteudo */
+div#wrapper-main-content {
+    background: url("/arquivos/cc-background-main-home.jpg?v=634855729477900000") repeat scroll center top #000000;
+    height: 1529px;
+    margin: 15px 0 0 0;
+}
+
+/* Timeline */
+div#wrapper-main-content div#timeline-bullet-up {
+    background: url("/arquivos/cc-bullet-time-up.png?v=634855734734800000") repeat scroll 0 0 transparent;
+    height: 187px;
+    margin-left: 447px;
+    *margin-left: -567px;
+    position: absolute;
+    top: 570px;
+    width: 120px; 
+    z-index: 2;
+}
+
+div#wrapper-main-content div#timeline-bullet-down {
+    background: url("/arquivos/cc-bullet-time-down.png?v=634855735040230000") repeat scroll 0 0 transparent;
+    height: 187px;
+    margin-left: 447px;
+    *margin-left: -567px;
+    position: absolute;
+    top: 1940px;
+    width: 120px;
+    z-index: 2;
+}
+   
+    div#wrapper-main-content div#hold-conteudo {
+        float: left;
+        margin: 50px 0 0;
+        padding: 20px 0 0;
+        position: relative;
+        width: 100%;
+        z-index: 1;
+    }
+
+    div#wrapper-main-content div#hold-conteudo div.conteudos-time{
+        float: left;
+        padding: 0 5px 0 0;
+        width: 485px;
+    }
+    div#middle-timeline {
+        clear: right;
+        float: left;
+        height: 500px;
+        width: 35px;
+    }
+
+    div#right-content {
+        float: right !important;
+        padding: 0 !important;
+    } 
+div#wrapper-main-content div.wrapper{
+    width: 1015px !important;
+    padding: 0 !important;
+}
+
+
+div#middle-timeline div{
+    background: none repeat scroll 0 0 #FFFFFF;
+    height: 1200px;
+    margin: 55px 0 0 16px;
+    position: relative;
+    width: 3px;
+    z-index: 3;
+} 
+
+div#middle-timeline div span{
+    height: 15px;
+    margin: 0 0 0 -5px;
+    position: absolute;
+    width: 15px;
+}
+
+#middle-timeline span#laranja {
+    background: url("/arquivos/cc-balss-timeline.png?v=634859070895000000") no-repeat scroll 0 0 transparent;
+    top: 650px;
+}
+
+
+/* Videos timeline */
+
+div.hold-video {
+    clear: both;
+    height: 269px;
+    padding: 5px 4px 5px 5px;
+    width: 465px;
+    position: relative;
+}
+
+    div.hold-video .hover {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 470px;
+        height: 275px;
+        background-image: url('/arquivos/player-icon.png');
+        background-repeat: no-repeat;
+        background-position: center center;
+        cursor:pointer;
+    }
+
+    div#video-01 .hover{
+        background-color: #EE4D1A; 
+    }
+
+    div#video-02 .hover{
+        background-color: #9f0062; 
+    }
+    
+    
+    div.hold-video div.title-video {
+        color: #FFFFFF;
+        float: left;
+        font-family: 'Gotham-Book', verdana;
+        padding: 5px 10px;
+        position: relative;
+        width: 95.5%;
+    }
+
+div.hold-embed {
+    float: left;
+    height: 243px;
+    padding: 2px 0 0 2px;
+    width: 100%;
+}
+
+div.seta-timeline-right {
+    height: 17px;
+    margin: -5px 0 0 468px;
+    position: absolute;
+    width: 29px;
+    *display: none; 
+}
+
+div.seta-timeline-left {
+    height: 17px;
+    margin: -5px 0 0 -33px;
+    position: absolute;
+    width: 29px;
+    *display: none;
+}
+
+div#video-01 {
+    background: none repeat scroll 0 0 #EE4D1A;
+    margin: 95px 0 0;  
+}
+
+div#video-01 .title-video { background-color: #e23f0c; }
+div#video-01 div.seta-timeline-right{    background: url("/arquivos/cc-setas-timeline.png?v=634859101039400000") repeat scroll 0 0 transparent; }
+
+div#video-02 {
+    background: none repeat scroll 0 0 #9F0062;
+    margin: 160px 0 0;
+    float: right;
+}
+div#video-02 div.title-video {
+    background: none repeat scroll 0 0 #710048;
+}
+div#video-02 div.seta-timeline-left {
+    background: url("/arquivos/cc-setas-timeline.png?v=634859101039400000") no-repeat scroll 0 -33px transparent;
+}
+
+#middle-timeline span#roxo {
+    background: url("/arquivos/cc-balss-timeline.png?") no-repeat scroll 0 -14px transparent;
+    top: 713px;
+}
+
+div#redes-sociais-timeline {
+    background: none repeat scroll 0 0 #66CBFF;
+    color: #113560;
+    font-family: 'Gotham-Book', verdana;
+    height: 110px;
+    margin: 120px 0 0 166px;
+    padding: 10px;
+    text-align: center;
+    width: 288px;
+}
+
+div#redes-sociais-timeline .seta-timeline-right {
+    background: url("/arquivos/cc-setas-timeline.png?v=634859101039400000") no-repeat scroll 0 -16px transparent;
+    height: 15px;
+    margin-left: 294px;
+    margin-top: -11px;
+}
+
+
+#middle-timeline span#azul {
+    background: url("/arquivos/cc-balss-timeline.png?v=634859070895000000") no-repeat scroll 0 -31px transparent;
+    top: 1048px;
+}
+
+span.social-icon {
+    background: url("/arquivos/cc-sprite-social.png?v=634859197485270000") repeat scroll 0 0 transparent;
+    float: left;
+    height: 50px;
+    margin: 5px;
+    width: 50px;
+}
+
+.social-icon.twitter { background-position: -60px 0; }
+.social-icon.facebook { background-position: -119px 0; }
+
+
+#redes-sociais-timeline > ul {
+    float: left;    
+    margin: 10px 0 0 10px;
+    width: 100%;
+}
+
+#redes-sociais-timeline > ul li{
+    float: left; 
+}
+
+/* TÃ­tulos dos Banners */
+div.title-shop {
+    background-repeat: no-repeat !important;
+    height: 80px;
+    width: 210px;
+}
+
+div#shop-masculino {
+    background: url("/arquivos/cc-title-shop-masculina.png?v=634859811522670000") repeat scroll 0 0 transparent;
+    float: left;
+}
+
+div#shop-feminino {
+    background: url("/arquivos/cc-title-shop-feminina.png?v=634859811542370000") repeat scroll 40px 0 transparent;
+    float: right;
+} 
+
+/* Banners down carrousel */
+div.wrapper-hold-banner{
+    height: 535px;
+    width: 485px;
+    clear: both;
+}
+    div.banner-carrousel, div.banner-carrousel div {
+        height: 535px;
+        width: 485px;
+    }
+    div.banner-carrousel img{
+        height: 100%;
+        width: 100%;
+    }
+    span.prev-banner {
+        background: url("/arquivos/cc-bullet-left-carrousel-banner.png?v=634855777279230000") repeat scroll 0 0 transparent;
+        height: 75px;
+        margin: 200px 0 0 5px;
+        position: absolute;
+        width: 75px;
+        z-index: 8;
+        cursor: pointer;
+    }
+
+    .next-banner {
+        background: url("/arquivos/cc-bullet-right-carrousel-banner.png?v=634855777292070000") repeat scroll 0 0 transparent;
+        height: 75px;
+        margin: 200px 0 0 405px;
+        position: absolute;
+        width: 75px;
+        z-index: 8;
+        cursor: pointer;
+    }
+/* cache */

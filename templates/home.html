@@ -1,0 +1,195 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:vtex="http://www.vtex.com.br/2009/vtex-common" xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce">
+    <head>
+        <title>Coke Clothing</title>
+
+        <vtex:metaTags/>
+        
+        <!--  SubTemplate: pngIeFix -->
+        <vtex:template id="pngIeFix" />
+        <!-- /SubTemplate: pngIeFix -->
+
+        <!-- Carrousel -->
+        <script type="text/javascript" src="/arquivos/cc-jquery.carouFredSel-6.0.4-packed.js" ></script>
+
+        <!-- Carrousel banners -->
+        <script type="text/javascript" src="/arquivos/cc-jquery.cycle.all.js" ></script>
+
+        <!-- js home -->
+        <script type="text/javascript" src="/arquivos/cc-home.js" ></script>
+
+        <!-- css padrao -->
+        <link rel="stylesheet" type="" href="/arquivos/cc-home.css" />
+    
+    </head>
+
+    <body>
+
+        <!-- Header -->
+        <div id="wrapper-full-header" class="hold-wrapper" >
+            <div id="hold-header" class="wrapper" >
+                <vtex:template id="CC-header" />
+            </div>
+        </div>
+        
+        <!-- Banner -->
+        <div id="wrapper-full-banner" class="hold-wrapper" >
+
+          
+            <div class="wrapper" >          
+                <a href="#" id="prev" title="Show previous"> </a>
+                <a href="#" id="next" title="Show next"> </a>
+            </div>
+            
+            <div id="carousel">
+                <vtex:contentPlaceHolder id="caroussel" />
+                
+            </div>
+            <div id="pager"></div>
+
+        </div>
+
+        <!-- Conteudo -->
+        <div class="hold-wrapper" id="wrapper-main-content" >
+            
+            <div class="wrapper" >
+
+                <div id="timeline-bullet-up" ></div>
+                <div id="timeline-bullet-down" ></div>
+                    
+                <div id="hold-conteudo" >
+                    
+                    <!-- Conteudo Esquerda  -->
+                    <div id="left-content" class="conteudos-time" >
+                        
+                        <!-- Título do Carrousel -->
+                        <div class="title-shop" id="shop-masculino" ></div>
+
+                        <!-- Banner Masculino  -->
+                        <div class="wrapper-hold-banner" >
+        
+                            <span class="prev-banner" id="prev-banner-1" > </span>
+                            <span class="next-banner" id="next-banner-1" > </span>
+                            
+                            <div class="banner-carrousel" id="banner-carrousel-1" >
+                                
+                                <vtex:contentPlaceHolder id="bannerMasculino" />
+                                
+
+                            </div>
+
+                        </div>
+
+                        <!-- Video 01 -->
+                        <div class="hold-video left" id="video-01" >
+                            <div class="hover" ></div>
+                            <div class="seta-timeline-right" ></div>
+                            <vtex:contentPlaceHolder id="video-01" />
+                            
+                        </div>
+
+                        <!-- Redes Sociais -->
+                        <div class="hold-video left" id="redes-sociais-timeline" >
+
+                            <div class="seta-timeline-right" ></div>
+                            <p>O QUE ANDA ACONTECENDO NAS NOSSAS REDES SOCIAIS.</p>
+                            <ul>
+                                <!-- <li> <a target="_blank" href="#"> <span class="social-icon" ></span> </a> </li> -->
+                                <li> <a target="_blank" href="https://twitter.com/cocaclothing/"> <span class="social-icon twitter" ></span> </a> </li>
+                                <li> <a target="_blank" href="https://www.facebook.com/CocaColaClothing"> <span class="social-icon facebook" ></span> </a> </li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                    <!-- Meio -->
+                    <div id="middle-timeline" >
+                        <div>
+                            <span id="laranja" ></span>
+                            <span id="roxo" ></span>
+                            <span id="azul" ></span>
+                        </div>
+                    </div>
+
+                    <!-- Conteudo Direita -->
+                    <div id="right-content" class="conteudos-time" >
+                        
+                        <!-- Título do Carrousel -->
+                        <div class="title-shop" id="shop-feminino" ></div>
+
+                        <!-- Banner Feminino  -->
+                        <div class="wrapper-hold-banner" >
+        
+                            <span class="prev-banner" id="prev-banner-2" > </span>
+                            <span class="next-banner" id="next-banner-2" > </span>
+                            
+                            <div class="banner-carrousel" id="banner-carrousel-2" >
+                                
+                                <vtex:contentPlaceHolder id="bannerFeminino" />
+                                  
+
+                            </div>
+
+                        </div>
+
+                        <!-- Video 02 -->
+                        <div class="hold-video left" id="video-02" >
+                            <div class="hover" ></div>
+                            <div class="seta-timeline-left" ></div>
+                            <vtex:contentPlaceHolder id="video-02" />
+                            
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Footer -->
+        <div id="wrapper-full-footer" class="hold-wrapper" >
+            <div class="hold-wrapper" >
+                
+                <div class="footer-background" ></div>
+                <div class="wrapper" >
+                    <!--  SubTemplate: footer -->
+                    <vtex:template id="CC-footer" />
+                    <!--  /SubTemplate: footer -->
+                </div>
+                
+            </div>
+            
+            <!-- Subfooter -->
+            <div class="hold-wrapper" id="hold-subfooter" >
+                <!--  SubTemplate: subfooter -->
+                <vtex:template id="CC-subfooter" />
+                <!--  /SubTemplate: subfooter -->
+            </div>
+            
+        </div>
+
+        <!-- Início conteúdo -->
+        <div id="all" class='hide' >
+
+            <div id="content">
+                
+                <div id="bannerTV"><vtex:contentPlaceHolder id="BannerTV" /></div>
+                <div id="timeline">
+                    <vtex:contentPlaceHolder id="BannerTVMasc" />
+                    <vtex:contentPlaceHolder id="BannerTVFem" />
+                    <div id="destaqueVideo1"><vtex:contentPlaceHolder id="DestaqueVideo1" /></div>
+                    <div id="destaqueVideo2"><vtex:contentPlaceHolder id="DestaqueVideo2" /></div>
+                    <div id="socialMedia"></div>
+                </div>
+                
+            </div>
+
+            
+
+        </div>
+
+    </body>
+
+</html>

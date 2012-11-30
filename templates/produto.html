@@ -1,0 +1,97 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:vtex="http://www.vtex.com.br/2009/vtex-common" xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce">
+<head>
+<title>Coca Clothing</title>
+<vtex:metaTags/>
+
+<!-- Css Padrao -->
+<link rel="stylesheet" type="text/css" href="~/arquivos/cc-produto.css" />
+
+<script language="javascript" src="/arquivos/cc-produto.js" type="text/javascript"></script>
+<script language="javascript" src="/arquivos/cc-slider.js" type="text/javascript"></script>
+
+<!--  SubTemplate: pngIeFix -->
+<vtex:template id="pngIeFix" />
+<!-- /SubTemplate: pngIeFix -->
+</head>
+
+<body class="cc-produto">
+    <!-- Header -->
+    <div id="wrapper-full-header" class="hold-wrapper" >
+        <div id="hold-header" class="wrapper" >
+            <vtex:template id="CC-header" />
+        </div>
+    </div>
+
+    <div id="content">
+       
+       <div id="produto" >
+            <div id="imagem">
+                <vtex.cmc:ProductImage/>
+            </div>
+            <div id="info-box-produto">
+                <div id="box-head">
+                    <vtex.cmc:productName />
+                    <vtex.cmc:skuPrice />
+                </div>
+                <div id="info-produto">
+                    <vtex.cmc:ProductDescription/>
+                    <vtex.cmc:productSpecification/>
+                </div>
+                <div id="hotzone">
+                    <div class="seletorSku">
+                        <vtex.cmc:skuRichSelection changeImage="1" />
+                    </div>
+                    <div class="botaoComprar">
+                            <vtex.cmc:BuyButton />
+                    </div>
+                </div>
+                <div id="social-media-produto">
+                    <h3>Compartilhar</h3>
+                    <ul>
+                        <li>
+                            <a href="#" id="facebook-share" target="_blank" >
+                                <img alt="Facebook" src="/arquivos/triton-facebook-mini.png"/>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" id="twitter-share" target="_blank" >
+                                <img alt="Twitter" src="/arquivos/triton-twitter-mini.png"/>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                
+            </div>
+            <vtex:contentPlaceHolder id="Acessorios" />
+       </div> 
+       
+    </div>
+        
+    <span style="display:none;">
+    
+        <vtex:contentPlaceHolder id="Acessorios" />
+    </span>
+    
+    <!-- Footer -->
+    <div id="wrapper-full-footer" class="hold-wrapper" >
+        <div class="hold-wrapper" style="height: 200px;" >
+            
+            <div class="footer-background" ></div>
+            <div class="wrapper" >
+                <!--  SubTemplate: footer -->
+                <vtex:template id="CC-footer" />
+                <!--  /SubTemplate: footer -->
+            </div>
+            
+        </div>
+        
+        <!-- Subfooter -->
+        <div class="hold-wrapper" id="hold-subfooter" >
+            <!--  SubTemplate: subfooter -->
+            <vtex:template id="CC-subfooter" />
+            <!--  /SubTemplate: subfooter -->
+        </div>
+    </div>
+</body>
+</html>

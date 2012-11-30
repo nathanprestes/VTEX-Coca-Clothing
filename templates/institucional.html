@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:vtex="http://www.vtex.com.br/2009/vtex-common" xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce">
+<head>
+<title>Coca Clothing</title>
+<vtex:metaTags/>
+<link rel="stylesheet" type="text/css" href="~/arquivos/cc-reset.css" />
+<link rel="stylesheet" type="text/css" href="~/arquivos/cc-estrutura.css" />
+<link rel="stylesheet" type="text/css" href="~/arquivos/cc-fontface-gotham-pack.css" />
+
+<!--  SubTemplate: pngIeFix -->
+<vtex:template id="pngIeFix" />
+<!-- /SubTemplate: pngIeFix -->
+</head>
+
+<body>
+    <!-- Header -->
+    <div id="wrapper-full-header" class="hold-wrapper" >
+        <div id="hold-header" class="wrapper" >
+            <vtex:template id="CC-header" />
+        </div>
+    </div>
+
+    <div id="content">
+        <vtex:template id="CC-institucional-sidebar" />
+        <vtex:contentPlaceHolder id="conteudo" />
+    </div>
+
+    <!-- Footer -->
+    <div id="wrapper-full-footer" class="hold-wrapper" >
+        <div class="hold-wrapper" style="height: 200px;" >
+            
+            <div class="footer-background" ></div>
+            <div class="wrapper" >
+                <!--  SubTemplate: footer -->
+                <vtex:template id="CC-footer" />
+                <!--  /SubTemplate: footer -->
+            </div>
+            
+        </div>
+        
+        <!-- Subfooter -->
+        <div class="hold-wrapper" id="hold-subfooter" >
+            <!--  SubTemplate: subfooter -->
+            <vtex:template id="CC-subfooter" />
+            <!--  /SubTemplate: subfooter -->
+        </div>
+    </div>
+</body>
+</html>
